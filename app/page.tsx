@@ -22,7 +22,7 @@ export default function Home() {
           <span>переговорка</span>
         </a>
         <nav className="nav" aria-label="Основная навигация">
-          <a href="#menu">Меню</a>
+          <a href="/menu">Меню</a>
           <a href="#about">О месте</a>
           <a href="#gallery">Фото</a>
         </nav>
@@ -40,7 +40,7 @@ export default function Home() {
             выдохнуть между делами и взять любимый кофе с собой.
           </p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#menu">Что в меню <ArrowDownRight size={18} /></a>
+            <a className="button button-dark" href="/menu">Что в меню <ArrowDownRight size={18} /></a>
             <a className="button button-light" href="tel:+79106386396">Позвонить</a>
           </div>
           <div className="hero-meta" aria-label="Краткая информация">
@@ -91,6 +91,7 @@ export default function Home() {
           <h2>С чего начнём</h2>
           <p>Понятные вкусы, сезонные идеи и выпечка, которая хорошо умеет быть поводом для встречи.</p>
           <span className="menu-note">Меню и цены могут меняться</span>
+          <a className="menu-full-link" href="/menu">Смотреть полное меню <ArrowUpRight size={17} /></a>
         </div>
         <div className="menu-list">
           {drinks.map((drink, index) => (
