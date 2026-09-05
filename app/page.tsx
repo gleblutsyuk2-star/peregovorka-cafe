@@ -4,7 +4,7 @@ const drinks = [
   { name: 'Кофе с халвой', note: 'Плотный, мягкий, без сиропов', price: '340 ₽' },
   { name: 'Вишнёвый колд брю', note: 'Кофе и лёгкая ягодная кислинка', price: '390 ₽' },
   { name: 'Лимонная матча', note: 'Цитрус, свежесть и мягкая кислинка', price: '320 ₽' },
-  { name: 'Облепиха · яблоко · мёд', note: 'Тёплый витаминный чай', price: '320 ₽' },
+  { name: 'Облепиха яблоко мёд', note: 'Тёплый витаминный чай', price: '320 ₽' },
 ];
 
 const photos = [
@@ -34,7 +34,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Кофе · выпечка · разговоры</p>
-          <h1>Есть о чём<br /><em>поговорить.</em></h1>
+          <h1>Есть о чём<br /><em>поговорить</em></h1>
           <p className="lead">
             Небольшая кофейня на Радио, где удобно встретиться,
             выдохнуть между делами и взять любимый кофе с собой.
@@ -54,11 +54,6 @@ export default function Home() {
           <div className="hero-image-frame">
             <img src="/images/interior.webp" alt="Тёплый интерьер кофейни Переговорка" />
           </div>
-          <div className="floating-card">
-            <span className="floating-number">01</span>
-            <p>Встречаемся<br />за хорошим кофе</p>
-          </div>
-          <span className="stamp">but first<br />coffee</span>
         </div>
       </section>
 
@@ -69,7 +64,7 @@ export default function Home() {
       <section className="agenda section" id="about">
         <div className="section-heading">
           <p className="eyebrow">Повестка встречи</p>
-          <h2>На час, на пять минут<br />или до закрытия</h2>
+          <h2>На час на пять минут<br />или до закрытия</h2>
         </div>
         <div className="agenda-grid">
           <article className="agenda-card agenda-card-accent">
@@ -93,7 +88,7 @@ export default function Home() {
       <section className="menu-section section" id="menu">
         <div className="menu-intro">
           <p className="eyebrow">Выбор бариста</p>
-          <h2>С чего начнём?</h2>
+          <h2>С чего начнём</h2>
           <p>Понятные вкусы, сезонные идеи и выпечка, которая хорошо умеет быть поводом для встречи.</p>
           <span className="menu-note">Меню и цены могут меняться</span>
         </div>
@@ -137,7 +132,7 @@ export default function Home() {
       <section className="visit section" id="visit">
         <div className="visit-copy">
           <p className="eyebrow">Назначить встречу</p>
-          <h2>Москва,<br />ул. Радио, 24,<br />корпус 1</h2>
+          <h2>Москва<br />улица Радио 24<br />корпус 1</h2>
           <p><MapPin size={18} /> 1,45 км от метро «Бауманская»</p>
         </div>
         <div className="visit-card">
