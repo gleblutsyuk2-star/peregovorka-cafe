@@ -52,7 +52,7 @@ export default function Home() {
 
         <div className="hero-visual">
           <div className="hero-image-frame">
-            <img src="/images/interior.webp" alt="Тёплый интерьер кофейни Переговорка" />
+            <img src="/images/hero-cafe-aesthetic.webp" alt="Тёплый современный интерьер кофейни" />
           </div>
         </div>
       </section>
