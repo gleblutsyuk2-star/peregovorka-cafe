@@ -68,18 +68,18 @@ export default function Home() {
         </div>
         <div className="agenda-grid">
           <article className="agenda-card agenda-card-accent">
-            <span>01 / место</span>
+            <span>место</span>
             <h3>Сесть у окна</h3>
             <p>Свет, дерево и несколько спокойных мест для разговора или ноутбука.</p>
           </article>
           <article className="agenda-card">
-            <span>02 / вкус</span>
+            <span>вкус</span>
             <h3>Попробовать новое</h3>
             <p>Классика и авторские сочетания — от кофе с халвой до лимонной матчи.</p>
           </article>
           <article className="agenda-card agenda-card-photo">
             <img src="/images/coffee-set.webp" alt="Кофе, круассан и десерт на деревянном столе" />
-            <span>03 / пауза</span>
+            <span>пауза</span>
             <h3>Не торопиться</h3>
           </article>
         </div>
@@ -94,9 +94,8 @@ export default function Home() {
           <a className="menu-full-link" href="/menu">Смотреть полное меню <ArrowUpRight size={17} /></a>
         </div>
         <div className="menu-list">
-          {drinks.map((drink, index) => (
+          {drinks.map((drink) => (
             <article className="menu-item" key={drink.name}>
-              <span className="menu-index">0{index + 1}</span>
               <div>
                 <h3>{drink.name}</h3>
                 <p>{drink.note}</p>
@@ -108,7 +107,7 @@ export default function Home() {
       </section>
 
       <section className="quote-section section">
-        <div className="quote-score"><span>100%</span><p>положительных отзывов<br />об атмосфере и персонале</p></div>
+        <div className="quote-score"><span>95%</span><p>положительных отзывов<br />об атмосфере и персонале</p></div>
         <blockquote>«Место, где разговор начинается ещё до первого глотка»</blockquote>
       </section>
 
@@ -147,7 +146,7 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark"><Coffee size={20} /></span><span>переговорка</span></a>
-        <p>Кофе, с которого начинается разговор.</p>
+        <p>Кофе, с которого начинается разговор</p>
         <span>Фото: карточка организации на Яндекс Картах</span>
       </footer>
     </main>
