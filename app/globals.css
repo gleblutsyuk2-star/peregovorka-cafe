@@ -60,6 +60,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { margin-bottom: 24px; font-size: clamp(64px, 7.1vw, 106px); line-height: .84; letter-spacing: -.075em; font-weight: 800; }
 h1 em { color: var(--rust); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
 .lead { max-width: 560px; margin-bottom: 34px; font-size: clamp(18px, 1.45vw, 23px); line-height: 1.45; }
+.lead-mobile { display: none; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 0 24px; border: 1px solid var(--ink); border-radius: 100px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -213,12 +214,35 @@ footer > span { text-align: right; font-size: 11px; opacity: .45; }
   .site-header { min-height: 68px; padding: 0 20px; }
   .route-link { font-size: 0; }
   .route-link::before { content: 'Маршрут'; font-size: 13px; }
-  .hero-copy { min-height: auto; padding: 86px 20px 54px; }
-  h1 { font-size: clamp(58px, 19vw, 82px); }
-  .hero-meta { grid-template-columns: 1fr 1fr; }
-  .hero-meta div:last-child { grid-column: 1 / 3; }
-  .hero-visual { min-height: 560px; padding: 20px; }
-  .hero-image-frame { border-radius: 150px 150px 14px 14px; }
+  .hero {
+    position: relative;
+    display: block;
+    height: calc(100svh - 68px);
+    min-height: 560px;
+    background: url('/images/interior.webp') center 54% / cover no-repeat;
+    color: white;
+    isolation: isolate;
+  }
+  .hero::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 19, 17, .18) 12%, rgba(10, 19, 17, .38) 48%, rgba(10, 19, 17, .92) 100%);
+    content: '';
+  }
+  .hero-copy { min-height: 100%; justify-content: flex-end; padding: 50px 20px 28px; }
+  .hero .eyebrow { margin-bottom: 14px; font-size: 10px; }
+  .hero h1 { margin-bottom: 18px; font-size: clamp(38px, 12vw, 58px); line-height: .88; }
+  .hero h1 em { color: var(--wheat); }
+  .lead { max-width: 330px; margin-bottom: 24px; font-size: 16px; line-height: 1.4; }
+  .lead-desktop { display: none; }
+  .lead-mobile { display: inline; }
+  .hero-actions { gap: 8px; }
+  .hero-actions .button { min-height: 48px; padding: 0 20px; border-color: white; }
+  .hero-actions .button-dark { border-color: var(--paper); background: var(--paper); color: var(--ink); }
+  .hero-actions .button-light { display: none; }
+  .hero-meta { display: none; }
+  .hero-visual { display: none; }
   .section { padding: 84px 20px; }
   .section-heading h2, .menu-intro h2, .visit h2 { font-size: 52px; }
   .agenda-grid { grid-template-columns: 1fr; margin-top: 42px; }

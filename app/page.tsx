@@ -36,8 +36,8 @@ export default function Home() {
           <p className="eyebrow">Кофе · выпечка · разговоры</p>
           <h1>Есть о чём<br /><em>поговорить</em></h1>
           <p className="lead">
-            Небольшая кофейня на Радио, где удобно встретиться,
-            выдохнуть между делами и взять любимый кофе с собой.
+            <span className="lead-desktop">Небольшая кофейня на Радио, где удобно встретиться, выдохнуть между делами и взять любимый кофе с собой.</span>
+            <span className="lead-mobile">Кофейня на Радио для встреч и кофе</span>
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="/menu">Что в меню <ArrowDownRight size={18} /></a>
